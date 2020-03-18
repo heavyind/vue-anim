@@ -1,0 +1,40 @@
+{
+  "name": "vue-anim",
+  "version": "0.0.1",
+  "description": "Subcomponent animation effects for Vue apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "watch": "rimraf dist && rollup -c ./build/config.js --watch",
+    "build": "rimraf dist && rollup -c ./build/config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heavyind/vue-anim.git"
+  },
+  "keywords": [
+    "vue",
+    "vuex",
+    "animation"
+  ],
+  "author": "Chase Ries",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heavyind/vue-anim/issues"
+  },
+  "homepage": "https://github.com/heavyind/vue-anim#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.1.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-babel-minify": "^10.0.0",
+    "rollup-plugin-commonjs": "^10.1.0"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4"
+  }
+}
