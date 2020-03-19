@@ -1,4 +1,7 @@
+import Anim from "./lib/Anim.js";
+import { cfgDefault } from "./util/config";
 import * as e from "./util/e";
+
 
 export default {
 
@@ -11,5 +14,9 @@ export default {
     if (typeof _cfg.store === "undefined") {
       throw new Error(e.cfgStoreUndefined);
     }
+
+    const cfg = { ...cfgDefault, ..._cfg };
+
+    Vue.component(cfg.animComponentName, Anim(Vue));
   }
-}
+};
