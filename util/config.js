@@ -3,7 +3,7 @@
 export const cfgDefault = {
   store: null,
   mixin: false,
-  mixinNamespace: "$anim",
+  directiveName: "anim",
   storeNamespace: "anim",
   animComponentName: "anim"
 };
